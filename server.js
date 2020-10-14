@@ -197,7 +197,7 @@ function viewAllEmployees () {
                     department_id: answers.departmentId,
                 },
                 {
-                    id: chosenItem.id;
+                    id: chosenItem.id
                 },
             ]);
             connection.query("UPDATE department SET ? WHERE ?" , [
