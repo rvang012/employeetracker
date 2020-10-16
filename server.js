@@ -2,14 +2,14 @@ const util = require("util");
 const mysql = require("mysql");
 const inquirer = require("inquirer");
 const cTable = require("console.table");
-const { start } = require("repl");
+// const { start } = require("repl");
 
 const connection = mysql.createConnection(
     {
         host: "localhost",
         user: "employeeDB_admin",
         password: "EmployeeRecorder",
-        database: "employees",
+        database: "employeedb",
     }
 );
 
@@ -18,7 +18,7 @@ connection.connect(function (err) {
     start();
 });
 
-function start () {
+function start() {
     inquirer
         .prompt({
             name: "employeeList",
