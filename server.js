@@ -214,4 +214,4 @@ function viewAllEmployees () {
     });
 }
 
-module.exports = connections;
+module.exports = connection;
