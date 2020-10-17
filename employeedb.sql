@@ -1,10 +1,10 @@
-drop DATABASE if not EXISTS employees;
+drop DATABASE if EXISTS employees;
 CREATE DATABASE employees;
 use employees;
 create table employee_info
 (
 	id int
-    auto_increment not null. 
+    auto_increment not null,
 first_name varchar
 	(15) null,
 last_name varchar
